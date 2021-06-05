@@ -13,10 +13,10 @@ public class Homework1 {
         System.out.println(i + " is int ");
 
         float f = 5.1f;
-        System.out.println(f + "is float");
+        System.out.println(f + " is float ");
 
         char ch = 'D';
-        System.out .println(ch + "is char");
+        System.out .println(ch + " is char ");
 
         String s = "Message";
         System.out.println(s + " is Hello world ");
