@@ -11,9 +11,9 @@ public class Homework2 {
 
         boolean isNetworkAvailable = netIsAvailable();
         if (isNetworkAvailable) {
-            System.out.println("Network is available");
+            System.out.println("yes you have inet ");
         } else {
-            System.out.println("Network is not available");
+            System.out.println("no you do not have inet");
         }
     }
 
