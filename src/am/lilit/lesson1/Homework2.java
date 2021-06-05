@@ -10,7 +10,11 @@ public class Homework2 {
     public static void main(String[] args) {
 
         boolean isNetworkAvailable = netIsAvailable();
-        System.out.println("Is network available։ " + isNetworkAvailable);
+        if (isNetworkAvailable) {
+            System.out.println("Network is available");
+        } else {
+            System.out.println("Network is not available");
+        }
     }
 
     private static boolean netIsAvailable() {
