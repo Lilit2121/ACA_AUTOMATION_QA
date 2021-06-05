@@ -9,5 +9,8 @@ public class Homework1 {
         short sh = 85;
         System.out.println(sh + " is short");
 
+        int i= 12;
+        System.out.println(i + " is int ");
+
     }
 }
