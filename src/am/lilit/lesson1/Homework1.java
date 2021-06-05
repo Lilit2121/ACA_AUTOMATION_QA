@@ -12,5 +12,17 @@ public class Homework1 {
         int i= 12;
         System.out.println(i + " is int ");
 
+        float f = 5.1f;
+        System.out.println(f + "is float");
+
+        char ch = 'D';
+        System.out .println(ch + "is char");
+
+        String s = "Message";
+        System.out.println(s + " is Hello world ");
+
+        Boolean bl = true;
+        System.out.println(bl + " is true ");
+
     }
 }
