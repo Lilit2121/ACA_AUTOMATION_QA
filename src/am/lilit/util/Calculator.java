@@ -37,10 +37,7 @@ public class Calculator {
                     output = num1 / num2;
                     break;
 
-                /* If user enters any other operator or char apart from
-                 * +, -, * and /, then display an error message to user
-                 *
-                 */
+
                 default:
                     System.out.printf("You have entered wrong operator");
                     return;
