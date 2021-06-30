@@ -1,28 +1,30 @@
 package am.lilit.HMW7;
 
+import java.util.Objects;
+
 public class Computer {
+
     public String cpu;
     public String ram;
     public String ssd;
 
-    public Computer(String intel, String ram, String san) {
+    public Computer(String cpu, String ram, String ssd){
+        this.cpu=cpu;
+        this.ram=ram;
+        this.ssd=ssd;
     }
 
-    public static void main(String[] argc) {
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ComputerTest computer = (ComputerTest) o;
+        return cpu.equals(computer.cpu) && ram.equals(computer.ram) && ssd.equals(computer.ssd);
+    }
 
-        Computer first=new Computer("Intel","Ram","San");
-        Computer second=new Computer("Intel","Ram2","San");
-        Computer third=new Computer("Intel","Ram","San");
-
-        System.out.println(first.equals(second));
-        System.out.println(first.equals(third));
-        System.out.println(second.equals(third));
-        System.out.println(second.equals(first));
+    @Override
+    public int hashCode() {
+        return Objects.hash(cpu, ram, ssd);
     }
 }
-
-
-
-
-
 
