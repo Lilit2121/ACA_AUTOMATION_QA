@@ -18,7 +18,7 @@ public class Computer {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ComputerTest computer = (ComputerTest) o;
+        Computer computer = (Computer) o;
         return cpu.equals(computer.cpu) && ram.equals(computer.ram) && ssd.equals(computer.ssd);
     }
 
